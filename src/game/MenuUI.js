@@ -17,6 +17,10 @@ const SECONDARY_COLOR = 0x4a9eff;
 const BACKGROUND_COLOR = 0x1a1a2e;
 const HOVER_COLOR = 0xffcc00;
 
+// Layout constants for level selection
+const LEVEL_BUTTON_START_Y = 0.7;
+const LEVEL_BUTTON_SPACING = 0.35;
+
 /**
  * Create a text mesh
  */
@@ -162,7 +166,7 @@ export class MenuUI {
 
 		// Level buttons
 		LEVELS.forEach((level, index) => {
-			const yPos = 0.7 - index * 0.35;
+			const yPos = LEVEL_BUTTON_START_Y - index * LEVEL_BUTTON_SPACING;
 			
 			const levelBtn = createButton(
 				`${level.id}. ${level.name}`,

@@ -319,6 +319,9 @@ function updateBullets(delta, scene) {
 					delete bullets[bullet.uuid];
 					scene.remove(bullet);
 
+					const levelConfig = gameManager.getCurrentLevelConfig();
+					const respawnDelay = levelConfig.respawnDelay || 500;
+
 					gsap.to(target.scale, {
 						duration: 0.3,
 						x: 0,
@@ -338,7 +341,7 @@ function updateBullets(delta, scene) {
 									y: 1,
 									z: 1,
 								});
-							}, 500);
+							}, respawnDelay);
 						},
 					});
 

@@ -28,6 +28,7 @@ export const LEVELS = [
 		scoreToComplete: 30,
 		timeLimit: 60,
 		movingTargets: false,
+		respawnDelay: 1000,
 	},
 	{
 		id: 2,
@@ -38,6 +39,7 @@ export const LEVELS = [
 		scoreToComplete: 80,
 		timeLimit: 60,
 		movingTargets: false,
+		respawnDelay: 800,
 	},
 	{
 		id: 3,
@@ -48,6 +50,7 @@ export const LEVELS = [
 		scoreToComplete: 150,
 		timeLimit: 45,
 		movingTargets: false,
+		respawnDelay: 400,
 	},
 	{
 		id: 4,
@@ -58,6 +61,7 @@ export const LEVELS = [
 		scoreToComplete: 200,
 		timeLimit: 60,
 		movingTargets: true,
+		respawnDelay: 600,
 	},
 	{
 		id: 5,
@@ -68,6 +72,7 @@ export const LEVELS = [
 		scoreToComplete: 300,
 		timeLimit: 90,
 		movingTargets: true,
+		respawnDelay: 300,
 	},
 ];
 
